@@ -1,0 +1,124 @@
+:root {
+    --bleuNuit: #22223b;
+    --grey: #4a4e69;
+    --shadyLady: #9A8C98;
+    --grisBrun: #C9ADA7;
+    --rosePale: #F2E9E4;
+
+}
+
+
+section#feedback {
+    background-image: url("./images/FeedbackBg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section#feedback .overlay .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+}
+
+.mainPart{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 25px;
+    padding-top: 95px;
+}
+
+.mainPart h1  {
+    color: var(--rosePale);
+    font-size: 45px;
+
+}
+
+
+.comments h2{
+    color: var(--rosePale);
+    font-size: 45px;
+    padding-bottom: 10px;
+
+}
+
+
+
+.ratings {
+    background-color: var(--grisBrun);
+    padding-bottom: 5px;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.star {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 45px;
+    color: #ccc;
+    cursor: pointer;
+    padding: 5px;
+    transition: all 0.5s;
+}
+
+.starHover{
+    color: var(--bleuNuit);
+    
+}
+
+textarea.feedback {
+    font-size: 25px;
+    padding: 10px;
+    background-color: var(--grisBrun);
+    color: var(--bleuNuit);
+    width: 798px;
+    height: 388px;
+    border-radius: 20px;
+}
+
+.comments .btns{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.dismiss{
+   color: var(--rosePale);
+   border: var(--bleuNuit);
+   border-radius: 20px;
+   background-color: var(--grisBrun);
+   padding: 15px 35px;
+   transition: all 500ms;
+   font-size: 30px;
+}
+
+.dismiss:hover{
+    background-color: var(--bleuNuit);
+    opacity: 0.5;
+}
+
+.send{
+    padding: 15px 35px;
+    border-radius: 20px;
+    background-color: var(--bleuNuit);
+    color: var(--rosePale);
+    transition: all 500ms;
+    font-size: 30px;
+}
+
+.send:hover{
+    opacity: 0.5;
+}
+
+
+
+
+.illustrationFeedback img{
+    width: 460px;
+}

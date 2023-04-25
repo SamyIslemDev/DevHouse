@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --bleuNuit: #22223b;
+    --grey: #4a4e69;
+    --shadyLady: #9A8C98;
+    --grisBrun: #C9ADA7;
+    --rosePale: #F2E9E4;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* transition: all 0.5s ease-in-out; */
+    scroll-behavior: smooth;
+
+}
+
+
+/* body{    overflow: hidden;} */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    opacity: 38;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    border-bottom: solid;
+    padding-bottom: 15px;
+    border-bottom-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+#navbar .container .logo img {
+    width: 65px;
+    height: 65px;
+
+}
+
+#navbar .container {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 675px;
+}
+
+#navbar .container .logo span {
+    height: 65px;
+    width: 5px;
+    background-color: var(--rosePale);
+
+}
+
+#navbar .container .logo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#navbar .container ul.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    padding-top: 22px;
+}
+
+#navbar .container ul.menu li {
+    list-style: none;
+}
+
+#navbar .container ul.menu li a {
+    color: var(--rosePale);
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+#navbar .container ul.menu li a:hover {
+    font-weight: bold;
+    background-color: var(--grisBrun);
+    border-radius: 12px;
+    padding: 4px 8px;
+}
+
+main {
+    position: relative;
+    height: 1000px;
+}
+
+.caroussel-container {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-in;
+}
+
+/* .caroussel-container .caroussel-slider  {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding-top: 125px;
+    padding-bottom: 125px;
+    gap: 140px;
+    opacity: 10;
+    z-index: 0; 
+   
+
+
+} */
+.y {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding-top: 125px;
+    padding-bottom: 125px;
+    gap: 140px;
+    opacity: 10;
+    z-index: 0;
+    width: 60%;
+    transition: all 0.3s ease-in;
+}
+
+.caroussel-container .caroussel-slider h1 {
+    font-weight: 700px;
+    color: var(--rosePale);
+    font-size: 90px;
+
+}
+
+.caroussel-container .caroussel-slider h1 span {
+    color: var(--grisBrun);
+    /* background-color: rgba(0, 0, 0, 0.5); */
+
+}
+
+.caroussel-container .caroussel-slider:nth-child(1) {
+    z-index: 0;
+
+}
+
+.caroussel-container .caroussel-slider p {
+    font-weight: 350px;
+    font-size: 40px;
+    color: var(--rosePale);
+
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 750px;
+    /* background-color: var(--bleuNuit);
+    opacity: 0.7; */
+
+
+}
+
+
+
+
+.caroussel {
+    background-image: url("./images/austin-distel-rxpThOwuVgE-unsplash.jpg");
+    background-repeat: no-repeat;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+
+    background-size: cover;
+    min-height: 100%;
+}
+
+.carouIdeas {
+    background-image: url("./images/absolutvision-82TpEld0_e4-unsplash.jpg");
+    z-index: 10;
+}
+
+.carouBusiness {
+    background-image: url("./images/pexels-diva-plavalaguna-6147023.jpg");
+    z-index: 20;
+}
+
+
+/* ic je gère les boutons de scroll  */
+
+.bouttons-scroll {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    transition: all 0.5s;
+    position: absolute;
+    bottom: 185px;
+    right: 650px;
+
+}
+
+.bouttons-scroll span {
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    background-color: var(--rosePale);
+    cursor: pointer;
+}
+
+.btn-services button {
+    border-radius: 100px;
+    background-color: var(--rosePale);
+    height: 78px;
+    width: 373px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    right: 500px;
+    bottom: 65px;
+    gap: 35px;
+
+
+}
+
+.btn-services button span {
+    border-radius: 50%;
+    background-color: var(--bleuNuit);
+    width: 67px;
+    height: 67px;
+    content: "";
+    margin-left: 5px;
+}
+
+/* Ici je devrais changer la font family  */
+.btn-services button a {
+    text-decoration: none;
+    color: var(--bleuNuit);
+    font-size: 30px;
+    font-weight: 400;
+    transition: all 0.3s;
+}
+
+
+/* là je controle le hover du boutton  */
+.btn-services button:hover {
+    background-color: var(--bleuNuit);
+}
+
+.btn-services button:hover span {
+    background-color: var(--rosePale);
+}
+
+.btn-services button:hover a {
+    color: var(--rosePale);
+}
+
+.inactive {
+    display: none;
+}
+
+
+/* là on commence la section Services  */
