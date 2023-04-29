@@ -71,32 +71,90 @@ spanLeft.addEventListener("click", (event) => {
 //   service.classList.add("test");
 // })
 
-const btn = document.querySelector(".grow");
-const pop = document.querySelector("#services .popUpSliders");
-btn.addEventListener("click", () => {
+const btn = document.querySelectorAll(".grow");
+const pop = document.querySelectorAll("#services .popUpSliders");
+btn[0].addEventListener("click", () => {
   console.log(5);
-  pop.classList.add("bottom");
+  pop[0].classList.add("bottom");
   document.body.classList.add("modal-open");
 });
 
 
 // là je vais m'occuper de la sortie du texte back 
-const backBtn=document.querySelector(".btnQuit span img");
-const back=document.querySelector(".btnQuit .back");
+const backBtn=document.querySelectorAll(".btnQuit span img");
+const back=document.querySelectorAll(".btnQuit .back");
 
-backBtn.addEventListener("mouseover", () => {
+backBtn[0].addEventListener("mouseover", () => {
   console.log(5);
-  back.classList.add("backLeft");
+  back[0].classList.add("backLeft");
 });
-backBtn.addEventListener("mouseleave", () => {
-  back.classList.remove("backLeft");
+backBtn[0].addEventListener("mouseleave", () => {
+  back[0].classList.remove("backLeft");
 });
 
-backBtn.addEventListener("click",()=>{
-  pop.classList.remove("bottom");
+backBtn[0].addEventListener("click",()=>{
+  pop[0].classList.remove("bottom");
   document.body.classList.remove("modal-open");
 
 })
+
+// deuxième slider 
+
+btn[1].addEventListener("click", () => {
+  console.log(5);
+  pop[1].classList.add("bottom");
+  document.body.classList.add("modal-open");
+});
+
+
+// là je vais m'occuper de la sortie du texte back 
+// const backBtn=document.querySelector(".btnQuit span img");
+// const back=document.querySelector(".btnQuit .back");
+
+backBtn[1].addEventListener("mouseover", () => {
+  console.log(5);
+  back[1].classList.add("backLeft");
+});
+backBtn[1].addEventListener("mouseleave", () => {
+  back[1].classList.remove("backLeft");
+});
+
+backBtn[1].addEventListener("click",()=>{
+  pop[1].classList.remove("bottom");
+  document.body.classList.remove("modal-open");
+
+})
+
+
+// 3ème slider
+
+btn[2].addEventListener("click", () => {
+  console.log(5);
+  pop[2].classList.add("bottom");
+  document.body.classList.add("modal-open");
+});
+
+
+// là je vais m'occuper de la sortie du texte back 
+// const backBtn=document.querySelector(".btnQuit span img");
+// const back=document.querySelector(".btnQuit .back");
+
+backBtn[2].addEventListener("mouseover", () => {
+  console.log(5);
+  back[2].classList.add("backLeft");
+});
+backBtn[2].addEventListener("mouseleave", () => {
+  back[2].classList.remove("backLeft");
+});
+
+backBtn[2].addEventListener("click",()=>{
+  pop[2].classList.remove("bottom");
+  document.body.classList.remove("modal-open");
+
+})
+
+
+
 
 
 
@@ -232,6 +290,73 @@ for (let i = 0; i < star.length; i++) {
     }
   });
 }
+
+
+
+
+// là je vais m'occuper de l'affichage des formulaires 
+
+const account=document.querySelector(".account");
+const menuDeroulant=document.querySelector(".menuDeroulant");
+const creation=document.querySelector(".creation");
+const connexion=document.querySelector(".connexion");
+const Formulaire=document.querySelector(".Formulaire");
+const LogInForm=document.querySelector(".LogInForm");
+
+account.addEventListener("click",()=>{
+  menuDeroulant.classList.toggle("vanish");
+  event.stopPropagation();
+
+
+})
+
+
+creation.addEventListener("click",()=>{
+  Formulaire.classList.toggle("vanish");
+  if(Formulaire.classList.contains("vanish")){
+    document.body.classList.add("modal-open");
+  }
+  event.stopPropagation();
+
+  
+  
+  
+})
+
+
+connexion.addEventListener("click",()=>{
+  LogInForm.classList.toggle("vanish");
+  if(LogInForm.classList.contains("vanish")){
+    document.body.classList.add("modal-open");
+  }
+  event.stopPropagation();
+
+  
+  
+  
+})
+
+
+
+document.addEventListener('click', function(event) {
+  if (event.target.class !== 'menuDeroulant Formulaire') {
+    if(menuDeroulant.classList.contains("vanish")){
+      menuDeroulant.classList.remove("vanish");
+    }
+    if(Formulaire.classList.contains("vanish")){
+      Formulaire.classList.remove("vanish");
+      document.body.classList.remove("modal-open");
+    }
+    if(LogInForm.classList.contains("vanish")){
+      LogInForm.classList.remove("vanish");
+      document.body.classList.remove("modal-open");
+    }
+
+    // code à exécuter lorsque l'utilisateur clique sur un élément autre que celui à exclure
+  }
+});
+
+
 
 
 

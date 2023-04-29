@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+* {
+    font-family: 'Avenir LT Std';
+}
+@font-face {
+    font-family: 'Avenir LT Std';
+    src: url("Avenir LT Std/Avenir LT STD 65 Medium/Avenir LT Std 65 Medium.otf");
+}
+.container-box {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-card {
+    position: relative;
+    width: 676px;
+    height: 707px;
+    background-color: #22223B;
+    border-radius: 40px;
+}
+
+/* changer le nom de classe de logo  */
+
+
+.logoForm {
+    position: relative;
+    width: 80px;
+    height: 73px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 55px;
+}
+.logo-titleForm {
+    position: relative;
+    color: #F2E9E4;
+    text-align: center;
+    font-family: "Source Sans Pro";
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 63px;
+    top: 55px;
+    pointer-events: none;
+}
+.plus-sign {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    right: 228px;
+    top: 136px;
+}
+
+/* ça aussi  */
+
+.titleForm {
+    position: relative;
+    color: #F4EBE6;
+    text-align: center;
+    font-style: normal;
+    font-size: 42px;
+    font-weight: 350;
+    line-height: 60px;
+    top: 83px;
+    pointer-events: none;
+}
+
+/* ça aussi  */
+.LogIn {
+    position: relative;
+    width: 100%;
+    top: 95px;
+    padding: 0 115px 0;
+} 
+.first-name, .last-name {
+    position: relative;
+    display: inline-block;
+    padding-top: 10px;
+}
+.first-name input {
+    width: 211px;
+    height: 36px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(244, 235, 230, 0.6);
+    outline: none;
+    color: white;
+    font-size: 17px;
+    margin-right: 32px;
+}
+.first-name label {
+    position: absolute;
+    bottom: 10px;
+    color: rgba(244, 235, 230, 0.6);
+    font-weight: 350;
+    font-size: 20px;
+    left: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.first-name input:focus ~ label, .first-name input:valid ~ label,
+.last-name input:focus ~ label, .last-name input:valid ~ label,
+.email input:focus ~ label, .email input:valid ~ label,
+.password input:focus ~ label, .password input:valid ~ label {
+    transform: translateY(-20px);
+    font-size: 15px;
+}
+.last-name input {
+    width: 198px;
+    height: 36px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(244, 235, 230, 0.6);
+    outline: none;
+    color: white;
+    font-size: 17px;
+}
+.last-name label {
+    position: absolute;
+    bottom: 10px;
+    color: rgba(244, 235, 230, 0.6);
+    font-weight: 350;
+    font-size: 20px;
+    left: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.email, .password {
+    position: relative;
+    padding-top: 20px;
+}
+.password {
+    margin-bottom: 30px;
+}
+.email input {
+    width: 100%;
+    height: 36px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(244, 235, 230, 0.6);
+    outline: none;
+    color: white;
+    font-size: 17px;
+}
+.email label {
+    position: absolute;
+    bottom: 10px;
+    color: rgba(244, 235, 230, 0.6);
+    font-weight: 350;
+    font-size: 20px;
+    left: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.password input {
+    width: 100%;
+    height: 36px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(244, 235, 230, 0.6);
+    outline: none;
+    color: white;
+    font-size: 17px;
+}
+.password label {
+    position: absolute;
+    bottom: 10px;
+    color: rgba(244, 235, 230, 0.6);
+    font-weight: 350;
+    font-size: 20px;
+    left: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.create input{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    gap: 10px;
+    background: #F2E9E4;
+    color: rgba(34, 34, 59, 0.8);
+    font-style: normal;
+    font-weight: 750;
+    font-size: 16px;
+}
+.create:hover ,.create input:hover{
+    box-shadow: 3px 3px 29px -4px #FFFFFF ;
+    transition: all 0.5s ease;
+    color: #22223B;
+    cursor: pointer;
+}
+.spans p {
+    text-align: center;
+    margin-top: 17px;
+    color: rgba(244, 235, 230, 0.6);
+    font-style: normal;
+    font-weight: 350;
+    font-size: 16px;
+    line-height: 24px;
+    pointer-events: none;
+}
+.spans {
+    position: relative;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+}
+.first-span, .second-span {
+    display: inline-block;
+    position: absolute;
+    width: 195px;
+    bottom: 50%;
+    border-bottom: 1px solid rgba(244, 235, 230, 0.6);
+}
+.first-span {
+    left: 0;
+}
+.second-span {
+    right: 0;
+}
+.signUp {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.signUp input{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    gap: 10px;
+    background: #F2E9E4;
+    color: rgba(34, 34, 59, 0.8);
+    font-style: normal;
+    font-weight: 750;
+    font-size: 16px;
+}
+.signUp:hover{
+    box-shadow: 0 0 20px 0 #FFFFFF ;
+    transition: all 0.5s ease;
+}
+.signUp:hover input{
+    color: #22223B;
+    transition: all 0.5s ease;
+}
+.fa-brands {
+    position: absolute;
+    left: 15px;
+    color: #9A8C98;
+}
+.signUp:hover .fa-brands{
+    color: #22223B;
+    transition: all 0.5s ease;
+}
+.login {
+    width: 100%;
+    padding: 30px;
+    bottom: 46px;
+}
+.login p {
+    text-align: center;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.login a {
+    font-style: normal;
+    font-weight: 350;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+
+
+.Formulaire{
+    position: fixed;
+    top: 1%;
+    left: 1%;
+    right: 30px;
+    opacity: 0;
+    
+}
+
+
+
+/* partie Log In  */
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'Avenir LT Std';
+    src: url("Avenir LT Std/Avenir LT STD 65 Medium/Avenir LT Std 65 Medium.otf");
+}
+.LOGIN-BOX {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.LOGIN-CARD {
+    position: relative;
+    width: 676px;
+    height: 707px;
+    background-color: #22223B;
+    border-radius: 40px;
+}
+.LOGOFORM {
+    position: relative;
+    width: 80px;
+    height: 73px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 55px;
+}
+.LOGO-TITLEFORM {
+    position: relative;
+    color: #F2E9E4;
+    text-align: center;
+    font-family: "Source Sans Pro";
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 63px;
+    top: 55px;
+    pointer-events: none;
+}
+.PLUS-SIGN {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    right: 228px;
+    top: 136px;
+}
+.TITLEFORM {
+    position: relative;
+    color: #F4EBE6;
+    text-align: center;
+    font-style: normal;
+    font-size: 42px;
+    font-weight: 350;
+    line-height: 60px;
+    top: 83px;
+    pointer-events: none;
+}
+.LOGIN {
+    position: relative;
+    width: 100%;
+    top: 95px;
+    padding: 0 115px 0;
+} 
+.EMAIL input:focus ~ label, .EMAIL input:valid ~ label,
+.PASSWORD input:focus ~ label, .PASSWORD input:valid ~ label {
+    transform: translateY(-20px);
+    font-size: 15px;
+}
+.EMAIL, .PASSWORD {
+    position: relative;
+    padding-top: 20px;
+}
+.PASSWORD {
+    margin-bottom: 30px;
+}
+.EMAIL input {
+    width: 100%;
+    height: 36px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(244, 235, 230, 0.6);
+    outline: none;
+    color: white;
+    font-size: 17px;
+}
+.EMAIL label {
+    position: absolute;
+    bottom: 10px;
+    color: rgba(244, 235, 230, 0.6);
+    font-weight: 350;
+    font-size: 20px;
+    left: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.PASSWORD input {
+    width: 100%;
+    height: 36px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(244, 235, 230, 0.6);
+    outline: none;
+    color: white;
+    font-size: 17px;
+}
+.PASSWORD label {
+    position: absolute;
+    bottom: 10px;
+    color: rgba(244, 235, 230, 0.6);
+    font-weight: 350;
+    font-size: 20px;
+    left: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.LOGIN-LINK input{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    gap: 10px;
+    background: #F2E9E4;
+    color: rgba(34, 34, 59, 0.8);
+    font-style: normal;
+    font-weight: 750;
+    font-size: 16px;
+}
+.LOGIN-LINK:hover ,.LOGIN-LINK input:hover{
+    box-shadow: 3px 3px 29px -4px #FFFFFF ;
+    transition: all 0.5s ease;
+    color: #22223B;
+    cursor: pointer;
+}
+.SPANS p {
+    text-align: center;
+    margin-top: 17px;
+    color: rgba(244, 235, 230, 0.6);
+    font-style: normal;
+    font-weight: 350;
+    font-size: 16px;
+    line-height: 24px;
+    pointer-events: none;
+}
+.SPANS {
+    position: relative;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+}
+.FIRST-SPAN, .SECOND-SPAN {
+    display: inline-block;
+    position: absolute;
+    width: 195px;
+    bottom: 50%;
+    border-bottom: 1px solid rgba(244, 235, 230, 0.6);
+}
+.FIRST-SPAN {
+    left: 0;
+}
+.SECOND-SPAN {
+    right: 0;
+}
+.LOGIN-GOOGLE {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.LOGIN-GOOGLE input{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    gap: 10px;
+    background: #F2E9E4;
+    color: rgba(34, 34, 59, 0.8);
+    font-style: normal;
+    font-weight: 750;
+    font-size: 16px;
+}
+.LOGIN-GOOGLE:hover{
+    box-shadow: 0 0 20px 0 #FFFFFF ;
+    transition: all 0.5s ease;
+}
+.LOGIN-GOOGLE:hover input{
+    color: #22223B;
+    transition: all 0.5s ease;
+}
+.LOGIN-GOOGLE .fa-brands {
+    position: absolute;
+    left: 15px;
+    color: #9A8C98;
+}
+.LOGIN-GOOGLE:hover .fa-brands{
+    color: #22223B;
+    transition: all 0.5s ease;
+}
+.SIGNUP {
+    width: 100%;
+    padding: 30px;
+    bottom: 46px;
+}
+.SIGNUP p {
+    text-align: center;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.SIGNUP a {
+    font-style: normal;
+    font-weight: 350;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+
+
+.LogInForm{
+    position: fixed;
+    top: 1%;
+    left: 1%;
+    right: 30px;
+    opacity: 0;
+
+}
+
+.vanish{
+    opacity: 1;
+    z-index: 10000;
+}

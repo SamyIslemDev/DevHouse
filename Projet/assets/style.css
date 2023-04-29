@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
 :root {
     --bleuNuit: #22223b;
@@ -15,7 +16,28 @@
     padding: 0;
     /* transition: all 0.5s ease-in-out; */
     scroll-behavior: smooth;
+    font-family: 'Avenir LT Std';
 
+}
+
+.account{
+    color: red;
+    font-size: large;
+    width: 20px;
+    position: absolute;
+    top: 37px;
+
+}
+.account:hover{
+    font-weight: bold;
+    background-color: var(--grisBrun);
+      border-radius: 12px; 
+    padding: 8px 12px; 
+}
+
+@font-face {
+    font-family: 'Avenir LT Std';
+    src: url("Avenir LT Std/Avenir LT STD 65 Medium/Avenir LT Std 65 Medium.otf");
 }
 
 
@@ -262,5 +284,43 @@ main {
     display: none;
 }
 
+
+.menuDeroulant{
+    z-index: 25555555555555555;
+    position: absolute;
+    top: 75%;
+    right: 5%;
+    background-color: var(--rosePale);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0;
+
+    
+
+}
+
+.menuDeroulant h1{
+    color: var(--bleuNuit);
+    font-size: 20px;
+    padding: 8px;
+    cursor: pointer;
+
+
+}
+.menuDeroulant h1:nth-child(1){
+    border-bottom: solid;
+
+}
+.menuDeroulant h1:hover{
+    transform: translateX(5px);
+
+    
+}
+
+.vanish{
+    opacity: 1;
+}
 
 /* là on commence la section Services  */
